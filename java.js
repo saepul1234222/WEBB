@@ -1,32 +1,42 @@
-function tampilkanPortofolio() {
-    const workGrid = document.getElementById('work-grid');
-    
-    for (let i = 0; i < worksData.length; i++) {
-        const item = worksData[i];
-        const card = document.createElement('div');
-        card.className = 'card';
+<script>
+// Pesan selamat datang
+window.onload = function() {
+    alert("Selamat datang di Portfolio Fuji Sri Efendi 💙")
+};
 
-        let mediaHTML = '';
-        
-        if (item.type === 'video') {
-            mediaHTML = `
-                <video controls>
-                    <source src="${item.src}" type="video/mp4">
-                </video>
-            `;
-        } else {
-            mediaHTML = `<img src="${item.src}" alt="${item.title}">`;
+// Scroll halus saat klik menu
+document.querySelectorAll('.nav-links a').forEach(link  {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    })
+});
+
+// Efek animasi saat scroll
+const cards = document.querySelectorAll('.skill-card, .gallery-card');
+
+const observer = new IntersectionObserver((entries) ={
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
         }
+    })
+});
 
-        card.innerHTML = `
-            ${mediaHTML}
-            <h4>${item.title}</h4>
-            <p class="company">${item.company}</p>
-            <p>${item.desc}</p>
-        `;
+cards.forEach(card 
+    card.style.opacity = '0'
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'all 0.8s ease';
+    observer.observe(card);
+);
 
-        workGrid.appendChild(card);
-    }
-}
-
-tampilkanPortofolio();
+// Footer tahun otomatis
+document.querySelector('footer p').innerHTML =
+    `&copy; ${new Date().getFullYear()} Fuji Sri Efendi. Made with 💙`;
+</script>

@@ -1,208 +1,177 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Portofolio Saepul</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="hero">
-    <div class="overlay"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Blue Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="hero-content">
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Halo, Saya <br><span>Fuji Sri Efendi</span></h1>
+                <p>
+                    Saya adalah seorang pelajar yang memiliki ketertarikan mendalam di bidang teknologi,
+                    khususnya dalam mendalami coding dan Rekayasa Perangkat Lunak (RPL).
+                </p>
+                <a href="#gallery" class="btn">Lihat Karya Saya</a>
+            </div>
 
-        <img src="saepul.jpeg" alt="Saepul" class="profile-img">
-
-        <h1>Saepul</h1>
-
-        <p class="subtitle">Kelas 10 RPL 2</p>
-
-        <a href="#kontak" class="btn">Hubungi Saya</a>
-
-    </div>
-</header>
-
-<!-- TENTANG -->
-<section class="container">
-    <div class="card">
-
-        <h2><i class="fa-solid fa-user"></i> Tentang Saya</h2>
-
-        <p>
-            Halo! Saya <b>Saepul</b>, siswa kelas <b>10 RPL 2</b>  Saya siswa jurusan PPLG (Pengembangan Perangkat Lunak). Alasan utama saya masuk jurusan ini karena saya tertarik dengan dunia teknologi dan ingin menantang diri sendiri untuk keluar dari zona nyaman.
-
-Secara personal, saya adalah orang yang asyik dan menyenangkan kalau sudah kenal dekat. Di waktu luang, saya suka membuat buket dan gaci untuk di jual."</p>
-
-        <div class="info">
-            <p><i class="fa-solid fa-location-dot"></i> Dusun Cilayung RT 01 RW 04, Kecamatan Sumedang Selatan, Jawa Barat</p>
-
-            <p><i class="fa-solid fa-school"></i> Kelas : 10 RPL 2</p>
+            <div class="hero-image">
+                <img src="fuji.jpeg" alt="Foto Profil"
+                     onerror="this.src='https://via.placeholder.com/300/4a90e2/ffffff?text=Foto+Kamu'">
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <section id="about">
+        <h2 class="section-title">Tentang Saya</h2>
 
-<!-- SKILL -->
-<section class="container">
-    <div class="card">
+        <div class="about-content">
+            <div class="biodata-box">
+                <h3>Biodata Diri</h3>
 
-        <h2><i class="fa-solid fa-code"></i> Skill</h2>
+                <table class="biodata-table">
+                    <tr>
+                        <td class="label">Nama Lengkap</td>
+                        <td class="titik-dua">:</td>
+                        <td>Fuji Sri Efendi</td>
+                    </tr>
 
-        <div class="skills">
+                    <tr>
+                        <td class="label">Sekolah</td>
+                        <td class="titik-dua">:</td>
+                        <td>SMK Negeri 1 Sumedang</td>
+                    </tr>
 
-            <div class="skill-box">HTML</div>
-            <div class="skill-box">CSS</div>
-            <div class="skill-box">Desain</div>
-            <div class="skill-box">canva</div>
+                    <tr>
+                        <td class="label">Minat</td>
+                        <td class="titik-dua">:</td>
+                        <td>Web Design, Coding</td>
+                    </tr>
+                </table>
 
+                <p class="about-desc">
+                    Saya siswi jurusan PPLG (Pengembangan Perangkat Lunak dan Gim).
+                    Alasan utama saya masuk jurusan ini karena saya tertarik dengan dunia
+                    teknologi dan ingin menantang diri sendiri untuk keluar dari zona nyaman.
+                    <br><br>
+                    Secara personal, saya adalah orang yang asyik dan menyenangkan jika
+                    sudah mengenal dekat. Di waktu luang, saya sangat suka mendengarkan
+                    musik dan membaca novel untuk menyegarkan pikiran agar tetap kreatif.
+                </p>
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <section id="skills">
+        <h2 class="section-title">Skill</h2>
 
-<!-- PENGALAMAN -->
-<section class="container">
-    <div class="card">
+        <div class="skills-grid">
 
-        <h2><i class="fa-solid fa-briefcase"></i> Pengalaman</h2>
-
-        <div class="gallery">
-
-            <div class="gallery-item">
-                <img src="foto1.jpeg" alt="">
-                <p>Mengikuti oratorium.</p>
+            <div class="skill-card">
+                <div class="skill-icon html-icon">5</div>
+                <h3>HTML</h3>
             </div>
 
-            <div class="gallery-item">
-                <img src="poto2.jpeg" alt="">
-                <p>Mengikuti ldkom smkn 1 sumedang.</p>
+            <div class="skill-card">
+                <div class="skill-icon css-icon">3</div>
+                <h3>CSS</h3>
             </div>
 
-            <div class="gallery-item">
-                <img src="foto3.jpeg" alt="">
-                <p>Mengikuti lomba drumben.</p>
-            </div>
-
-            <div class="gallery-item">
-                <img src="foto5.jpeg" alt="">
-                <p>Membantu petugas ckg.</p>
-            </div>
-
-            <div class="gallery-item">
-                <img src="foto6.jpeg" alt="">
-                <p>Menyambut bapa bupati sumedang.</p>
-            </div>
-
-            <div class="gallery-item">
-                <img src="foto7.jpeg" alt="">
-                <p>Mengikuti latihan gabungan PMR sekabupaten sumedang.</p>
+            <div class="skill-card">
+                <div class="skill-icon js-icon">JS</div>
+                <h3>JavaScript</h3>
             </div>
 
         </div>
+    </section>
 
-    </div>
-</section>
+    <section id="gallery">
+        <h2 class="section-title">Portfolio Karya</h2>
 
-<!-- KARYA -->
-<section class="container">
-    <div class="card">
+        <div class="gallery-grid">
 
-        <h2><i class="fa-solid fa-image"></i> Karya</h2>
+            <div class="gallery-card">
+                <div class="gallery-img">
+                    <img src="sepanduk.jpeg" alt="Desain Spanduk"
+                         onerror="this.src='https://via.placeholder.com/400x250/e6f0fa/4a90e2?text=Desain+Spanduk'">
+                </div>
 
-        <div class="gallery">
-
-            <div class="gallery-item">
-                <img src="sepanduk.jpeg" alt="">
-                <h3>membuat sepanduk</h3>
-                <p>Kegiatan pembuatan desain spanduk ini bertujuan untuk membantu pedagang kaki lima agar memiliki media promosi yang lebih menarik dan mudah dikenal masyarakat. Selain melatih kreativitas dan kemampuan desain, kegiatan ini juga menjadi bentuk kepedulian terhadap perkembangan usaha kecil di lingkungan sekitar.</p>
+                <div class="gallery-info">
+                    <h3>Membuat Desain Spanduk</h3>
+                    <p>
+                        Kegiatan pembuatan desain spanduk ini bertujuan untuk membantu
+                        pedagang kaki lima agar memiliki media promosi yang lebih menarik
+                        dan mudah dikenal masyarakat.
+                    </p>
+                </div>
             </div>
 
-            <div class="gallery-item">
-                <img src="kemasan.jpeg" alt="">
-                <h3>membuat kemasan</h3>
-                <p> Kemasan makanan ini dibuat menggunakan CorelDRAW dengan desain
+            <div class="gallery-card">
+                <div class="gallery-img">
+                    <img src="kemasan.jpeg" alt="Desain Kemasan"
+                         onerror="this.src='https://via.placeholder.com/400x250/e6f0fa/4a90e2?text=Desain+Kemasan'">
+                </div>
+
+                <div class="gallery-info">
+                    <h3>Membuat Kemasan</h3>
+                    <p>
+                        Kemasan makanan ini dibuat menggunakan CorelDRAW dengan desain
                         yang kreatif dan menarik agar produk terlihat lebih modern dan
-                        memiliki daya tarik bagi konsumen.</p>
+                        memiliki daya tarik bagi konsumen.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img">
+                    <video controls width="100%">
+                        <source src="vidio.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung video.
+                    </video>
+                </div>
+
+                <div class="gallery-info">
+                    <h3>Membuat Video Procedure Text</h3>
+                    <p>
+                        Saya membuat video procedure text tentang cara menyambungkan WiFi.
+                        Video ini berisi langkah-langkah sederhana untuk menghubungkan
+                        perangkat ke jaringan internet dengan mudah dan jelas.
+                    </p>
+                </div>
             </div>
 
         </div>
-           <div class="gallery-card">
-    <div class="gallery-img">
-        <video controls>
-            <source src="vidio.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="gallery-info">
-        <h3>Membuat video Procedure text</h3>
-        <p>Saya membuat video procedure text tentang cara menyambungkan internet dari hp ke komputer melalui kabel data. Video ini berisi langkah-langkah sederhana untuk menghubungkan perangkat ke jaringan internet dengan mudah dan jelas.</p>
-    </div>
+    </section>
 
+    <section id="contact">
+        <h2 class="section-title">Hubungi Saya</h2>
 
-    </div>
-</section>
-
-<!-- PROJEK -->
-<section class="container">
-    <div class="card">
-
-        <h2><i class="fa-solid fa-laptop-code"></i> Projek Saya yang pernah di buat</h2>
-
-        <div class="project-list">
-
-            <div class="project-box">
-                <h3>membuat  Portfolio</h3>
-                <p>Membuat website portfolio pribadi dengan HTML dan CSS.</p>
-            </div>
-
-            <div class="project-box">
-                <h3>membuat website tebak angka</h3>
-                <p>Latihan membuat website tebak angka.</p>
-            </div>
-
-            <div class="project-box">
-                <h3>Desain</h3>
-                <p>Membuat desain menggunakan Corel.</p>
-            </div>
-
+        <div class="contact-links">
+            <a href="mailto:ptmoonbitefoods@gmail.com">Email</a>
+            <a href="https://instagram.com/llea_1710" target="_blank">Instagram</a>
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- KONTAK -->
-<section class="container" id="kontak">
-    <div class="card">
-
-        <h2><i class="fa-solid fa-address-book"></i> Kontak</h2>
-
-        <div class="contact">
-
-            <p><i class="fa-solid fa-envelope"></i> Email : saepul@gmail.com</p>
-
-            <p><i class="fa-solid fa-phone"></i> No HP : 088222025227</p>
-
-            <p><i class="fa-brands fa-instagram"></i> Instagram : @pul45627</p>
-
-            <p><i class="fa-brands fa-tiktok"></i> TikTok : @saepulepul559</p>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Portofolio Saepul | Dibuat dengan HTML & CSS</p>
-</footer>
+    <footer>
+        <p> 2026 Fuji Sri Efendi. Made with 💙</p>
+    </footer>
 
 </body>
 </html>
